@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de Alunos</title>
+	<link rel="stylesheet" class="inputclass" type="text/css" href="formAlunos.css">
+</head>
+<body>
+	<h1>Cadastro de Alunos</h1>
+	<form>
+		<label for="fullname" class="samelabel">Nome Completo</label><br>
+		<input class="inputclass" type="text" name="fullname" id="fullname" maxlength="20"><br>
+
+		<label for="address" class="samelabel">Endereço</label><br>	
+		<input class="inputclass" type="text" name="address" id="address" maxlength="30"><br>
+
+		<label for="city" class="samelabel">Cidade</label><br>
+		<input class="inputclass" type="text" name="fullname" id="city"><br>
+
+		<label for="uf" class="samelabel">UF</label><br>
+		<input class="inputclass" type="text" name="uf" id="uf"><br>
+
+		<label for="rg" class="samelabel">RG</label><br>
+		<input class="inputclass" type="text" name="rg" id="rg"><br>
+
+		<label for="cpf" class="samelabel">CPF</label><br>
+		<input class="inputclass" type="text" name="cpf" id="cpf" maxlength="11" placeholder="Insira somente números"><br>
+
+		<label for="email" class="samelabel">E-mail</label><br>
+		<input class="inputclass" type="email" name="email" id="email" maxlength="20"><br>
+
+		<p>Redes sociais</p>
+		<label for="facebook" class="samelabel">Facebook</label><br>
+		<input class="inputclass" type="checkbox" name="facebook" id="facebook"><br>
+
+		<label for="twitter" class="samelabel">Twitter</label><br>
+		<input class="inputclass" type="checkbox" name="twitter" id="twitter"><br>
+
+		<label for="inst" class="samelabel">Instagram</label><br>
+		<input class="inputclass" type="checkbox" name="inst" id="inst"><br>
+
+		<p>Curso</p>
+		<label for="redes">Redes</label>
+		<input class="inputclass" type="radio" name="curso" id="redes"><br>
+
+		<label for="si">Sistemas de Informação</label>
+		<input class="inputclass" type="radio" name="curso" id="si"><br>
+
+
+		<label for="ads">Análise e Desenvolvimento de Sistemas</label>
+		<input class="inputclass" type="radio" name="curso" id="ads"><br>
+		<label for="desc">Motivo da escolha: </label><br>
+		<textarea id="desc" maxlength="100"></textarea><br>
+
+		<button>Enviar!</button>
+
+	</form>
+</body>
+</html>
