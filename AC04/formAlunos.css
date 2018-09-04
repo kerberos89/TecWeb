@@ -1,25 +1,69 @@
-input {
-	width: 20%;
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #1e2023;
 }
 
-body {
-	font-family: Arial;
+h1 {
+    padding-left: 30%;
+    color: #ffffff;
 }
+
 .inputclass:focus {
-	background-color: white;
-	font-weight: bold;
+  background-color: #ffffff;
+  font-weight: bold;
 }
 
 .samelabel {
-	font-style: italic;
-
+  font-style: italic;
+  display: inline-block;
+  color: #ffffff; 
 }
 
 .inputclass {
-	background-color: lightblue;
+  background-color: lightblue;
+  width: 70%;
+  margin-bottom: 2%;
+}
+
+.inputcourse {
+  width: 2%
 }
 
 p{
-	font-size: 24px;
-	font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+
+.divcourse {
+  margin-bottom: 5%;
+}
+
+.inputsocial {
+  display: inline-block;
+}
+
+.labelsocial{
+  display: inline-block;
+  width: 100px;
+  float: left;
+  text-align: right;   
+  color: #ffffff;
+}
+
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
+
+
+.firstdiv{
+    margin: 0% auto;
+    width: 50%;
+}
+
+.labelcourse{
+    color: white;
 }
