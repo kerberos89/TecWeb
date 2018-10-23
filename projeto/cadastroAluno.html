@@ -16,28 +16,30 @@
 </script>
 </head>
 <body>  
-  <h1>Cadastro de Alunos</h1>
-  <form onsubmit="javascript: return notNull()">
-    <label for="name">Nome</label></br>
-    <input type="text" name="name" id="name" maxlength="100"></br>
+  <div class="container">
+    <h1>Cadastro de Alunos</h1>
+    <form onsubmit="javascript: return notNull()">
+      <label for="name"><span class="red"> * </span>Nome</label></br>
+      <input class="input is-rounded is-info" type="text" name="name" id="name" maxlength="100"></br>
 
-    <label for="nickname">Apelido</label></br>
-    <input type="text" name="nickname" id="nickname" maxlength="50"></br>
+      <label for="nickname"><span class="red"> * </span>Apelido</label></br>
+      <input class="input is-rounded is-info" type="text" name="nickname" id="nickname" maxlength="50"></br>
 
-    <label for="user">Usuário</label></br>
-    <input type="text" name="user" id="user" minlength="3" maxlength="30"></br>
+      <label for="user"><span class="red"> * </span>Usuário</label></br>
+      <input class="input is-rounded is-info" type="text" name="user" id="user" minlength="3" maxlength="30"></br>
 
-    <label for="birthdate">Data de Nascimento</label></br>
-    <input type="text" name="birthdate" id="birthdate" maxlength="10"></br>
+      <label for="birthdate"><span class="red"> * </span>Data de Nascimento</label></br>
+      <input class="input is-rounded is-info" type="date" name="birthdate" id="birthdate" maxlength="10"></br>
 
-    <label for="email">E-mail</label></br>
-    <input type="text" name="email" id="email" maxlength="100"></br>
+      <label for="email"><span class="red"> * </span>E-mail</label></br>
+      <input class="input is-rounded is-info" type="email" name="email" id="email" maxlength="100"></br>
 
-    <label for="cel">Celular</label></br>
-    <input type="text" name="cel" id="cel" maxlength="20"></br>
+      <label for="cel">Celular</label></br>
+      <input class="input is-rounded is-info" type="text" name="cel" id="cel" maxlength="20"></br>
 
-    <button type="submit">Enviar</button>
-  </form>
+      <button type="submit" class="button is-info">Enviar</button> 
+    </form>
+  </div>
 
 <!--   INSERIR LABEL DE FOTO AQUI MAXLENGTH 225-->
 
