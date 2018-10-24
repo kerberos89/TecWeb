@@ -2,42 +2,112 @@
 <html>
 <head>
   <title>Cadastro Aluno</title>
-  <script>
-    
-    function notNull(){
-     var getNome = document.getElementById("name");
-     if (getNome.value === " " || getNome.value === null || getNome.value === "" ){
-        document.getElementById("name").style.color = "blue";
-        alert("Valores com * são obrigatórios!")
-     }
-    };
 
+  <link rel="stylesheet" type="text/css" href="bulma.css">
+  <link rel="stylesheet" type="text/css" href="bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="cadastroAluno.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron|VT323" rel="stylesheet">
+
+  <script>
+
+    function notNull(){
+      var getName = document.getElementById("name");
+      var getNick = document.getElementById("nickname")
+      var getUser = document.getElementById("user")
+      var getBirth = document.getElementById("birthdate")
+      var getEmail = document.getElementById("email")
+
+      if (getName.value === " " || getName.value === null || getName.value === "" ){
+        alert("Preencha todos os campos obrigatórios!")
+      }
+      if (getNick.value === " " || getNick.value === null || getNick.value === "" ){
+        alert("Preencha todos os campos obrigatórios!")
+      }
+      if (getUser.value === " " || getUser.value === null || getUser.value === "" ){
+        alert("Preencha todos os campos obrigatórios!")
+      }
+      if (getBirth.value === " " || getBIrth.value === null || getBirth.value === "" ){
+        alert("Preencha todos os campos obrigatórios!")
+      }
+
+      if (getEmail.value === " " || getEmail.value === null || getEmail.value === "" ){
+        alert("Preencha todos os campos obrigatórios!")
+      }
+    };
 
 </script>
 </head>
-<body>  
+<body>
+  <header>
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand is-transparent">
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"><span class="isWhite">Home</span></a>
+          <a class="navbar-item"><span class="isWhite">Cursos</span></a>
+          <a class="navbar-item"><span class="isWhite">Sobre</span></a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link"><span class="isWhite">Cadastros</span></a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              <span class="isWhite">Cadastro de Alunos</span>
+            </a>
+            <a class="navbar-item">
+              <span class="isWhite">Cadastro de Professor</span>
+            </a>
+            <a class="navbar-item">
+              <span class="isWhite">Cadastro de Disciplinas</span>
+            </a>
+            <hr class="navbar-divider">
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+              <a class="button is-info">
+                Log in
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
   <div class="container">
-    <h1>Cadastro de Alunos</h1>
-    <form onsubmit="javascript: return notNull()">
-      <label for="name"><span class="red"> * </span>Nome</label></br>
-      <input class="input is-rounded is-info" type="text" name="name" id="name" maxlength="100"></br>
+    <h1 class="isWhite">Cadastro de Alunos</h1>
+    <p class="isWhite">Campos com <span class="red"> * </span class="red"> são obrigatórios!</p>
+    <form onsubmit="javascript: return notNull()" class="myform">
+      <label for="name" class="isWhite"><span class="red"> * </span>Nome</label></br>
+      <input class="input is-rounded is-info" class="sameInput" type="text" name="name" id="name" maxlength="100"></br>
 
-      <label for="nickname"><span class="red"> * </span>Apelido</label></br>
-      <input class="input is-rounded is-info" type="text" name="nickname" id="nickname" maxlength="50"></br>
+      <label for="nickname" class="isWhite"><span class="red"> * </span>Apelido</label></br>
+      <input class="input is-rounded is-info" class="sameInput" type="text" name="nickname" id="nickname" maxlength="50"></br>
 
-      <label for="user"><span class="red"> * </span>Usuário</label></br>
-      <input class="input is-rounded is-info" type="text" name="user" id="user" minlength="3" maxlength="30"></br>
+      <label for="user" class="isWhite"><span class="red"> * </span>Usuário</label></br>
+      <input class="input is-rounded is-info" class="sameInput" type="text" name="user" id="user" minlength="3" maxlength="30"></br>
 
-      <label for="birthdate"><span class="red"> * </span>Data de Nascimento</label></br>
+      <label for="birthdate" class="isWhite"><span class="red"> * </span>Data de Nascimento</label></br>
       <input class="input is-rounded is-info" type="date" name="birthdate" id="birthdate" maxlength="10"></br>
 
-      <label for="email"><span class="red"> * </span>E-mail</label></br>
+      <label for="email" class="isWhite"><span class="red"> * </span>E-mail</label></br>
       <input class="input is-rounded is-info" type="email" name="email" id="email" maxlength="100"></br>
 
-      <label for="cel">Celular</label></br>
+      <label for="cel" class="isWhite">Celular</label></br>
       <input class="input is-rounded is-info" type="text" name="cel" id="cel" maxlength="20"></br>
 
-      <button type="submit" class="button is-info">Enviar</button> 
+      <button type="submit" class="button is-info" class="isWhite">Enviar</button>
     </form>
   </div>
 
